@@ -19,7 +19,7 @@ namespace Wine_Application
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            label1.Text = "Elo";
+            label1.Text = "Siema";
         }
 
         private void label1_Click(object sender, EventArgs e)
