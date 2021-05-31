@@ -15,22 +15,23 @@ namespace Wine_Application
         public Form1()
         {
             InitializeComponent();
+            this.FormClosed +=
+           new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            (new Form2()).Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            label1.Text = "Siema";
-            label2.Text = "Elo2";
+           
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

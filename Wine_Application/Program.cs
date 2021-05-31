@@ -17,7 +17,8 @@ namespace Wine_Application
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            (new Form1()).Show();
+            Application.Run(); // needed, otherwise app closes immediately
         }
     }
 }
